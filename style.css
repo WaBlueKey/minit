@@ -159,3 +159,27 @@ a:hover{
 {
     margin: 10px;
 }
+
+@media screen and (max-width:768px)
+{
+    #page_container{
+    width:100%; 
+ 
+    }
+    #main_container{
+    width:100%; 
+
+    }
+    #aside_container{
+    width: 100%; 
+
+    }
+    .section_2{
+    width:100%;  
+    }
+    .beta_box{
+    width:100%; 
+    text-align: center; 
+    margin: 0, auto; 
+    }
+}
