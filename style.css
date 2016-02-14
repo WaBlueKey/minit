@@ -12,6 +12,11 @@ h1{
     color: #FF5A09; 
 }
 
+.logo{
+    
+    float: left; 
+}
+
 .pfoto{
     float: left;
 }
@@ -27,11 +32,17 @@ h1{
                 
 }
 
-ul{
+.login{
+    list-style-type: none;
+    padding:10px; 
+    float: right; 
+    
+}
+/*ul{
     list-style-type: none; 
     
     
-}
+}*/
 
 
 .pic_1{
@@ -83,10 +94,7 @@ ul{
     float:left; 
     width: 280px;
 }
-.buttons{
-    padding-bottom: 10px; 
-    text-align:center; 
-}
+
 .header{
     height:198px;
     background: #6E6E6E; /* For browsers that do not support gradients */
@@ -96,14 +104,21 @@ ul{
     background: linear-gradient(left,#6E6E6E, #F3843E); /* Standard syntax */
     color:aliceblue;  
 }
-.tagline{
+.main_menu{
     
     clear: left;
 }
-li{
-    padding:10px; 
+
+.tag_line{
+    
+    clear: left; 
 }
+
 .buttons{
+    padding-bottom: 10px; 
+    text-align:center; 
+    list-style-type: none;
+    padding:10px; 
     margin:0 auto; 
     list-style-type:none;
     display:block;
@@ -112,12 +127,14 @@ li{
 }
 .beta_box{
     right:0; 
-    position:fixed; 
-    bottom:0; 
+    float: left; 
+    position: fixed; 
+    bottom:0;  
     width:300px; 
     border: 3px solid grey; 
     padding:10px; 
-    background-color: hotpink; 
+    background-color: hotpink;
+    text-align: center; 
 }
 a{
     text-decoration: none;
@@ -153,6 +170,7 @@ a:hover{
     -webkit-box-shadow: 0 8px 0 #1b383b;
     -moz-box-shadow: 0 8px 0 #1b383b;
     text-shadow: 0 2px 2px rgba(255, 255, 255, 0.2); 
+    padding-bottom: 0px; 
 }
 
 .text2
@@ -160,7 +178,7 @@ a:hover{
     margin: 10px;
 }
 
-<<<<<<< HEAD
+
 @media screen and (max-width:768px)
 {
     #page_container{
@@ -182,12 +200,37 @@ a:hover{
     width:100%; 
     text-align: center; 
     margin: 0, auto; 
+    position: static; 
+    }
+    
+    .buttons{
+    text-align:center;
+    margin:0 auto; 
+    display:block;
+    width:100%; 
+    
+}
+    li{
+    padding:10px; 
+}
+    .header{
+        height:320px; 
+    }
+    
+    .login{ 
+        width: 100%;
+    }
+    
+    .login_buttons{
+        padding: 10px;
+        float:left; 
     }
 }
-=======
+
 @media only screen and (max-width: 768px) {
     /* For mobile phones: */
     [class*="col-"] {
         width: 100%;
     }
->>>>>>> refs/remotes/origin/master
+}
+
