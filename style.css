@@ -12,6 +12,10 @@ h1{
     color: #FF5A09; 
 }
 
+.logo{
+    float: left; 
+}
+
 .pfoto{
     float: left;
 }
@@ -27,12 +31,12 @@ h1{
                 
 }
 
-ul{
-    list-style-type: none; 
-    
+.login{
+    list-style-type: none;
+    padding:10px; 
+    float: right; 
     
 }
-
 
 .pic_1{
     float:left; 
@@ -83,10 +87,7 @@ ul{
     float:left; 
     width: 280px;
 }
-.buttons{
-    padding-bottom: 10px; 
-    text-align:center; 
-}
+
 .header{
     height:198px;
     background: #6E6E6E; /* For browsers that do not support gradients */
@@ -96,28 +97,36 @@ ul{
     background: linear-gradient(left,#6E6E6E, #F3843E); /* Standard syntax */
     color:aliceblue;  
 }
-.tagline{
+
+.main_menu{
+    clear:left; 
+}
+.tag_line{
     
     clear: left;
 }
-li{
-    padding:10px; 
-}
+
 .buttons{
+    padding-bottom: 10px; 
+    text-align:center; 
+    list-style-type: none;
+    padding:10px; 
     margin:0 auto; 
     list-style-type:none;
     display:block;
-    width:45%; 
+    width:45%;  
     
 }
 .beta_box{
     right:0; 
+     
     position:fixed; 
     bottom:0; 
     width:300px; 
     border: 3px solid grey; 
     padding:10px; 
     background-color: hotpink; 
+    text-align: center; 
 }
 a{
     text-decoration: none;
@@ -158,4 +167,53 @@ a:hover{
 .text2
 {
     margin: 10px;
+}
+
+
+@media screen and (max-width:768px)
+{
+    #page_container{
+    width:100%; 
+ 
+    }
+    #main_container{
+    width:100%; 
+
+    }
+    #aside_container{
+    width: 100%; 
+
+    }
+    .section_2{
+    width:100%;  
+    }
+    .beta_box{
+    width:100%; 
+    float:left;
+    position: static;     
+    
+    }
+    
+    .buttons{
+    text-align:center;
+    margin:0 auto; 
+    display:block;
+    width:100%; 
+    
+}
+    li{
+    padding:10px; 
+}
+    .header{
+        height:320px; 
+    }
+    
+    .login{ 
+        width: 100%;
+    }
+    
+    .login_buttons{
+        padding: 10px;
+        float:left; 
+    }
 }
