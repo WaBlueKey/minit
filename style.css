@@ -76,13 +76,15 @@ h1{
     background: linear-gradient(left,#6E6E6E, #F3843E); /* Standard syntax */
 }
 
-.section_3{
-    clear: left; 
-    padding: 10px;
-    margin: auto;  
-}
+
 
 #aside_container{
+    display:inline-block; 
+    float:left; 
+    width: 280px;
+}
+
+#aside_container2{
     display:inline-block; 
     float:left; 
     width: 280px;
@@ -119,7 +121,6 @@ h1{
 }
 .beta_box{
     right:0; 
-     
     position:fixed; 
     bottom:0; 
     width:300px; 
@@ -169,6 +170,40 @@ a:hover{
     margin: 10px;
 }
 
+@media screen and (min-width:768px) and (max-width:992px)
+{
+    #page_container{
+    width:100%; 
+ 
+    }
+    #main_container{
+    width:100%; 
+    }
+    
+    #aside_container{
+    width: 30%; 
+    float: left; 
+    padding-right: 10px;     
+
+    }
+    
+     #aside_container2{
+    width: 30%; 
+    float: left; 
+
+    }
+    
+    .beta_box{
+    width:30%; 
+    margin-right: 10px; 
+    float:right;
+    position: static;  
+        
+    
+    }
+    
+}
+
 
 @media screen and (max-width:768px)
 {
@@ -184,11 +219,16 @@ a:hover{
     width: 100%; 
 
     }
+    #aside_container2{
+    width: 100%; 
+
+    }
     .section_2{
     width:100%;  
     }
     .beta_box{
-    width:100%; 
+    width:100%;
+    margin: 10px; 
     float:left;
     position: static;     
     
