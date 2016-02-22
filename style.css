@@ -12,10 +12,54 @@ h1{
     color: #FF5A09; 
 }
 
+/*begining of the header*/
+
+.header{
+    height:200px;
+    padding-bottom: 30px; 
+    background: #6E6E6E; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left,#6E6E6E,#F3843E); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(left,#6E6E6E, #F3843E); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(left, #6E6E6E,#F3843E); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(left,#6E6E6E, #F3843E); /* Standard syntax */
+    color:aliceblue;  
+    display: flex; 
+    justify-content: space-around; 
+    flex-direction: column; 
+    
+}
 .logo{
     
-    float: left; 
+    order: 1; 
+    width: 250px;
+     flex-shrink:100; 
+    
 }
+     
+.tag_line{
+    order: 2; 
+    height: 20px; 
+    flex-shrink:100;  
+    
+     
+}
+
+.login{
+    list-style-type: none;
+    padding:10px; 
+    order:-1; 
+    flex-basis: 19px; 
+}
+
+.main_menu{
+    order:3; 
+    
+    
+}
+
+
+/*end of the header*/
+
 
 .pfoto{
     float: left;
@@ -27,22 +71,8 @@ h1{
     padding-right: 20px; 
 }
 
-.menu{
-    padding-top: 130px; 
-                
-}
 
-.login{
-    list-style-type: none;
-    padding:10px; 
-    float: right; 
-    
-}
-/*ul{
-    list-style-type: none; 
-    
-    
-}*/
+
 
 
 .pic_1{
@@ -83,11 +113,7 @@ h1{
     background: linear-gradient(left,#6E6E6E, #F3843E); /* Standard syntax */
 }
 
-.section_3{
-    clear: left; 
-    padding: 10px;
-    margin: auto;  
-}
+
 
 #aside_container{
     display:inline-block; 
@@ -95,23 +121,10 @@ h1{
     width: 280px;
 }
 
-.header{
-    height:198px;
-    background: #6E6E6E; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(left,#6E6E6E,#F3843E); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(left,#6E6E6E, #F3843E); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(left, #6E6E6E,#F3843E); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(left,#6E6E6E, #F3843E); /* Standard syntax */
-    color:aliceblue;  
-}
-.main_menu{
-    
-    clear: left;
-}
-
-.tag_line{
-    
-    clear: left; 
+#aside_container2{
+    display:inline-block; 
+    float:left; 
+    width: 280px;
 }
 
 .buttons{
@@ -122,18 +135,17 @@ h1{
     margin:0 auto; 
     list-style-type:none;
     display:block;
-    width:45%; 
+    width:45%;  
     
 }
 .beta_box{
     right:0; 
-    float: left; 
-    position: fixed; 
-    bottom:0;  
+    position:fixed; 
+    bottom:0; 
     width:300px; 
     border: 3px solid grey; 
     padding:10px; 
-    background-color: hotpink;
+    background-color: hotpink; 
     text-align: center; 
 }
 a{
@@ -170,12 +182,45 @@ a:hover{
     -webkit-box-shadow: 0 8px 0 #1b383b;
     -moz-box-shadow: 0 8px 0 #1b383b;
     text-shadow: 0 2px 2px rgba(255, 255, 255, 0.2); 
-    padding-bottom: 0px; 
 }
 
 .text2
 {
     margin: 10px;
+}
+
+@media screen and (min-width:768px) and (max-width:992px)
+{
+    #page_container{
+    width:100%; 
+ 
+    }
+    #main_container{
+    width:100%; 
+    }
+    
+    #aside_container{
+    width: 30%; 
+    float: left; 
+    padding-right: 10px;     
+
+    }
+    
+     #aside_container2{
+    width: 30%; 
+    float: left; 
+
+    }
+    
+    .beta_box{
+    width:30%; 
+    margin-right: 10px; 
+    float:right;
+    position: static;  
+        
+    
+    }
+    
 }
 
 
@@ -193,14 +238,19 @@ a:hover{
     width: 100%; 
 
     }
+    #aside_container2{
+    width: 100%; 
+
+    }
     .section_2{
     width:100%;  
     }
     .beta_box{
-    width:100%; 
-    text-align: center; 
-    margin: 0, auto; 
-    position: static; 
+    width:100%;
+    margin: 10px; 
+    float:left;
+    position: static;     
+    
     }
     
     .buttons{
@@ -217,20 +267,16 @@ a:hover{
         height:320px; 
     }
     
-    .login{ 
-        width: 100%;
+    
+    .login{
+    list-style-type: none;
+    padding:10px; 
+    order:2; 
+    flex-basis: 19px;  
+
     }
     
     .login_buttons{
         padding: 10px;
         float:left; 
     }
-}
-
-@media only screen and (max-width: 768px) {
-    /* For mobile phones: */
-    [class*="col-"] {
-        width: 100%;
-    }
-}
-
