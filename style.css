@@ -28,6 +28,12 @@ h1{
     flex-direction: column; 
     
 }
+.new_comment
+{
+    visibility: hidden; 
+    color:black; 
+    
+}
 .logo{
     
     order: 1; 
