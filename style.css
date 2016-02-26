@@ -30,7 +30,8 @@ h1{
 }
 .new_comment
 {
-    visibility: hidden; 
+  
+    
     color:black; 
     
 }
@@ -105,7 +106,7 @@ h1{
     background: -o-linear-gradient(left,#6E6E6E, #F3843E); /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(left, #6E6E6E,#F3843E); /* For Firefox 3.6 to 15 */
     background: linear-gradient(left,#6E6E6E, #F3843E); /* Standard syntax */
-    padding:10px; 
+    
 }
 
 .section_2{

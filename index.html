@@ -4,6 +4,7 @@
     <head>
         <title>Minit</title>
         <link rel="stylesheet" href="style.css">
+        <script src="post_a_status.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -57,9 +58,14 @@
              <!-- end of header -->
         
         <div id= "main_container">
+            <!--Start of Comment Button-->
             <div class = "link_to_comment">
-                <a href="#">Post a Status</a>
+                <input type="button" onclick="displayHidden()" value="Post a Status">
+                
             </div>
+             <!--End of Comment Button-->
+            
+            <!-- Begining of new comment -->
             <div class ="new_comment">
                 <textarea row="4" cols="50">
                 </textarea>
@@ -67,6 +73,7 @@
                 <input type="checkbox" name ="include" value= "location"> Include Location
                     <input type="submit" value="Submit">
                 </form>
+                <!-- end of new comment -->
             
             </div>
             <div class="section_1">
