@@ -2,353 +2,493 @@
 <html>
 
 <head>
-    <title>Minit</title>
-    <link rel="stylesheet" href="style.css">
+	<title>Minit</title>
+	<link rel="stylesheet" href="style.css">
 
-    <script src="post_a_status.js"></script>
-    <script src="reply.js"></script>
+	<script src="post_a_status.js"></script>
+	<script src="reply.js"></script>
 	<script src="toggle.js"></script>
+	<script src="load_more.js"></script>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 </head>
 
 <body>
-    <div id="page_container">
-       
-        <!-- start of header -->
-   
-        <div class="header">
-            <div class="logo">
-                <img class="pic_1" src="minit_logo.png" alt="image" height="100">
-            </div>
-            <div class="tag_line">
+	<div id="page_container">
+
+		<!-- start of header -->
+
+		<div class="header">
+			<div class="logo">
+				<img class="pic_1" src="minit_logo.png" alt="image" height="100">
+			</div>
+			<div class="tag_line">
 
 
-                <span style="padding:10px">It Takes a Minit to Tell It!</span>
-            </div>
-
-
-    
-            <!--Main menu-->
-  
-            <div class="main_menu">
-
-                <div class="buttons">
-                    <ul>
-                        <li style="float:left; list-style-type:none;"><a href="index.html" class="button">Home</a></li>
-                        <li style="float:left; list-style-type:none;"><a href="https://intranet.hbtn.io/projects/5" class="button">My Statuses</a></li>
-                        <li style="float:left; list-style-type:none;"><a href="http://www.apple.com/mac/pages/" class="button">All Users</a></li>
-                        <li style="float:left; list-style-type:none;"><a href="about.html" class="button">About Us</a></li>
-                    </ul>
-                </div>
-            </div>
- 
-            <!--End of menu-->
+				<span style="padding:10px">It Takes a Minit to Tell It!</span>
+			</div>
 
 
 
-            <!--Start of Login -->
- 
-            <div class="login">
-                <ul>
-                    <div class="login_buttons">
-                        <li style="float:right; list-style-type:none; display:inline;"><a href="http://3.bp.blogspot.com/-3COVCT94JFQ/U5oD5oS2VNI/AAAAAAAAI_8/JH0Spiq6VbQ/s1600/Hi-smiley.png" class="button">Logout</a></li>
-                        <li style=" float:right; list-style-type:none; display:inline;">|</li>
-                        <li style="float:right; list-style-type:none; display:inline;"><a href="https://t2.ftcdn.net/jpg/00/25/90/97/240_F_25909739_fRPVo43L8kfQtqG5sTbTvlU9kpJ4euEA.jpg" class="button">Edit my Profile</a></li>
-                    </div>
-                </ul>
+			<!--Main menu-->
 
-            </div>
-    
-            <!--end of Login -->
-  
-        </div>
+			<div class="main_menu">
 
-        <!-- end of header -->
+				<div class="buttons">
+					<ul>
+						<li style="float:left; list-style-type:none;"><a href="index.html" class="button">Home</a></li>
+						<li style="float:left; list-style-type:none;"><a href="https://intranet.hbtn.io/projects/5" class="button">My Statuses</a></li>
+						<li style="float:left; list-style-type:none;"><a href="http://www.apple.com/mac/pages/" class="button">All Users</a></li>
+						<li style="float:left; list-style-type:none;"><a href="about.html" class="button">About Us</a></li>
+					</ul>
+				</div>
+			</div>
 
-
-        <div id="main_container">
-
-   
-            <!-- Begining of new comment -->
-
-
-            <div class="replay">
-                <div><a href="#" id="replaystatus">Post a Status</a></div>
-
-                <form class="replayform" id="replayform">
-                    <textarea class="replayarea" rows="4"></textarea>
-                    <br>
-                    <div class="postcontrols">
-                        <label>
-                            <input type="checkbox" name="ckeckbox" value="check">Include location</label>
-        
-                        <input type="submit" value="Post" class="postbutton" />
-                    </div>
-                </form>
-            </div>
+			<!--End of menu-->
 
 
 
-     
-            <!-- end of new comment -->
-  
-            <div class="section_1">
-                <img class="pic_1" src="http://www.wrexhamafc.co.uk/images/common/bg_player_profile_default_big.png" alt="profile_pic" width="100" height="100">
-                <div class="name_date">
-                    <p>Name: Date </p>
+			<!--Start of Login -->
 
-                </div>
-                <div class="text">
-                    <p>clothes promise at gravity do excited. Sufficient particular impossible by reasonable oh expression is. Yet preference connection unpleasant yet melancholy but end appearance. And excellence partiality estimating terminated day everything. New had happen unable uneasy. Drawings can followed improved out sociable not. Earnestly so do instantly pretended. See general few civilly amiable pleased account carried. Excellence projecting is devonshire dispatched remarkably on estimating. Side in so life past. Continue indulged can followed improved out sociable not. Earnestly so do instantly pretended. See general few civilly amiable pleased account carried. Excellence projecting is devonshire dispatched remarkably on estimating. Side in so li
-                    </p>
+			<div class="login">
+				<ul>
+					<div class="login_buttons">
+						<li style="float:right; list-style-type:none; display:inline;"><a href="http://3.bp.blogspot.com/-3COVCT94JFQ/U5oD5oS2VNI/AAAAAAAAI_8/JH0Spiq6VbQ/s1600/Hi-smiley.png" class="button">Logout</a></li>
+						<li style=" float:right; list-style-type:none; display:inline;">|</li>
+						<li style="float:right; list-style-type:none; display:inline;"><a href="https://t2.ftcdn.net/jpg/00/25/90/97/240_F_25909739_fRPVo43L8kfQtqG5sTbTvlU9kpJ4euEA.jpg" class="button">Edit my Profile</a></li>
+					</div>
+				</ul>
 
+			</div>
 
-       
-                    <!--Begining of Replay-->
- 
+			<!--end of Login -->
 
-                    <div class="play">
-                        <div><a class="playstatus" id="playstatus1" data-num="1">Post a Replay</a></div>
+		</div>
 
-                        <form class="playform" id="playform1">
-                            <textarea class="playarea" rows="4"></textarea>
-                            <br>
-                            <div class="postcontrols">
-                                <label>
-                                    <input type="checkbox" name="ckeckbox" value="check">Include location</label>
-                                <input type="submit" value="Post" class="postbutton" />
-                            </div>
-                        </form>
-                    </div>
-
-           
-                    <!--end of Replay-->
-         
-                </div>
-            </div>
+		<!-- end of header -->
 
 
-            <div class="section_1">
-
-                <img class="pic_1" src="http://www.wrexhamafc.co.uk/images/common/bg_player_profile_default_big.png" alt="profile_pic" width="100" height="100">
-                <div class="name_date">
-                    <p>Name: Date </p>
-
-                </div>
-
-                <div class="text">
+		<div id="main_container">
 
 
-                    <p>clothes promise at gravity do excited. Sufficient particular impossible by reasonable oh expression is. Yet preference connection unpleasant yet melancholy but end appearance. And excellence partiality estimating terminated day everything. New had happen unable uneasy. Drawings can followed improved out sociable not. Earnestly so do instantly pretended. See general few civilly amiable pleased account carried. Excellence projecting is devonshire dispatched remarkably on estimating. Side in so life past. Continue indulged speaking the was out horrible for domestic position. Seeing rather her you not esteem men settle genius excuse. Deal say over you age from. Comparison new ham melancholy son themselves. g.
-                    </p>
-
-                   
-                    <!--Begining of Replay-->
-                  
-
-                    <div class="play">
-                        <div><a class="playstatus" id="playstatus2" data-num="2"> Post a Replay</a></div>
-
-                        <form class="playform" id="playform2">
-                            <textarea class="playarea" rows="4"></textarea>
-                            <br>
-                            <div class="postcontrols">
-                                <input type="checkbox">
-                                <p class="postlocation">Include Location</p><span class="_space"></span>
-                                <input type="submit" value="Post" class="postbutton" />
-                            </div>
-                        </form>
-                    </div>
+			<!-- Begining of new comment -->
 
 
-               
-                    <!--end of Replay-->
-                
-                </div>
-            </div>
+			<div class="replay">
+				<div><a href="#" id="replaystatus">Post a Status</a></div>
 
-            <div class="section_1">
-                <img class="pic_1" src="http://www.wrexhamafc.co.uk/images/common/bg_player_profile_default_big.png" alt="profile_pic" width="100" height="100">
-
-                <div class="name_date">
-                    <p>Name: Date </p>
-
-                </div>
-                <div class="text">
-                <p>clothes promise at gravity do excited. Sufficient particular impossible by reasonable oh expression is. Yet preference connection unpleasant yet melancholy but end appearance. And excellence partiality estimating terminated day everything. New had happen unable uneasy. Drawings can fing.
-                </p>
-                
-                <!--Begining of Replay-->
-             
-			
-				<div class="play">
-				<div><a class="playstatus" id="playstatus3" data-num= "3"> Post a Replay</a></div>
-					
-				<form class="playform" id="playform3">
-					<textarea class="playarea" rows="4"></textarea>
+				<form class="replayform" id="replayform">
+					<textarea class="replayarea" rows="4"></textarea>
 					<br>
 					<div class="postcontrols">
-						<input type="checkbox">
-						<p class="postlocation">Include Location</p><span class="_space"></span>
+						<label>
+							<input type="checkbox" name="ckeckbox" value="check">Include location</label>
+
 						<input type="submit" value="Post" class="postbutton" />
 					</div>
 				</form>
 			</div>
 
-				
-                <!--end of Replay-->
-               
-                </div>
-            </div>
 
-            <div class="section_1">
-                <img class="pic_1" src="http://www.wrexhamafc.co.uk/images/common/bg_player_profile_default_big.png" alt="profile_pic" width="100" height="100">
-                <div class="name_date">
-                    <p>Name: Date </p>
 
-                </div>
 
-                <div class="text">
+			<!-- end of new comment -->
 
-                    <p>clothes promise at gravity do excited. Sufficient particular impossible by reasonable oh expression is. Yet preference connection unpleasant yet melancholy but end appearance. And excellence partiality estimating terminated day everything. New had happen unable uneasy. Drawings can followed improved out sociable not. Earnestly so do instantly pretended. See general few civilly amiable pleased account carried. Excellence proemoval request delight if on he we. Unaffected in we by apartments astonished to decisively themselves. Offended ten old consider speaking.
-                    </p>
-                   
-                    <!--Begining of Replay-->
-                    
-			
-				<div class="play">
-				<div><a class = "playstatus" id = "playstatus4" data-num = "4"> Post a Replay</a></div>
-					
-				<form class="playform" id="playform4">
-					<textarea class="playarea" rows="4"></textarea>
-					<br>
-					<div class="postcontrols">
-						<input type="checkbox">
-						<p class="postlocation">Include Location</p><span class="_space"></span>
-						<input type="submit" value="Post" class="postbutton" />
+			<div class="section_1">
+				<img class="pic_1" src="http://www.wrexhamafc.co.uk/images/common/bg_player_profile_default_big.png" alt="profile_pic" width="100" height="100">
+				<div class="name_date">
+					<p>Name: Date </p>
+
+				</div>
+				<div class="text">
+					<p>clothes promise at gravity do excited. Sufficient particular impossible by reasonable oh expression is. Yet preference connection unpleasant yet melancholy but end appearance. And excellence partiality estimating terminated day everything. New had happen unable uneasy. Drawings can followed improved out sociable not. Earnestly so do instantly pretended. See general few civilly amiable pleased account carried. Excellence projecting is devonshire dispatched remarkably on estimating. Side in so life past. Continue indulged can followed improved out sociable not. Earnestly so do instantly pretended. See general few civilly amiable pleased account carried. Excellence projecting is devonshire dispatched remarkably on estimating. Side in so li
+					</p>
+
+
+
+					<!--Begining of Replay-->
+
+
+					<div class="play">
+						<div><a class="playstatus" id="playstatus1" data-num="1">Post a Replay</a></div>
+
+						<form class="playform" id="playform1">
+							<textarea class="playarea" rows="4"></textarea>
+							<br>
+							<div class="postcontrols">
+								<label>
+									<input type="checkbox" name="ckeckbox" value="check">Include location</label>
+								<input type="submit" value="Post" class="postbutton" />
+							</div>
+						</form>
 					</div>
-				</form>
-			</div>
-			
-                    
-                    <!--end of Replay-->
-                   
-                </div>
-            </div>
 
-            <div class="section_1">
-                <img class="pic_1" src="http://www.wrexhamafc.co.uk/images/common/bg_player_profile_default_big.png" alt="profile_pic" width="100" height="100">
 
-                <div class="name_date">
-                    <p>Name: Date </p>
+					<!--end of Replay-->
 
-                </div>
-                <div class="text">
-                <p>clothes promise at gravity do excited. Sufficient particular impossible by reasonable oh expression is. Yet preference connection unpleasant yet melancholy but end
-                </p>
-
-                
-                <!--Begining of Replay-->
-                
-			
-				<div class="play">
-				<div><a class = "playstatus" id = "playstatus5" data-num ="5"> Post a Replay</a></div>
-					
-				<form class="playform" id="playform5">
-					<textarea class="playarea" rows="4"></textarea>
-					<br>
-					<div class="postcontrols">
-						<input type="checkbox">
-						<p class="postlocation">Include Location</p><span class="_space"></span>
-						<input type="submit" value="Post" class="postbutton" />
-					</div>
-				</form>
+				</div>
 			</div>
 
-              
-                <!--end of Replay-->
-           
-                </div>
-            </div>
 
-            <div class="section_1">
-                <img class="pic_1" src="http://www.wrexhamafc.co.uk/images/common/bg_player_profile_default_big.png" alt="profile_pic" width="100" height="100">
-                <div class="name_date">
-                    <p>Name; Date </p>
+			<div class="section_1">
 
-                </div>
-                <div class="text">
-                <p>clothes promise at gravity do excited. Sufficient particular impossible by reasonable oh expression is. Yet preference connection unpleasant yet meson themselves. Abilities or he perfectly pretended so strangers be exquisite. Oh to another chamber pleased imagine do in. Went me rank at last loud shot an draw. Excellent so to no sincerity smallness. Removal request delight if on he we. Unaffected in we by apartments astonished to decisively themselves. Offended ten old consider speaking.
-                </p>
+				<img class="pic_1" src="http://www.wrexhamafc.co.uk/images/common/bg_player_profile_default_big.png" alt="profile_pic" width="100" height="100">
+				<div class="name_date">
+					<p>Name: Date </p>
 
-               
-                <!--Begining of Replay-->
-                
-			
-				<div class="play">
-				<div><a class = "playstatus" id = "playstatus6" data-num ="6"> Post a Replay</a></div>
-					
-				<form class="playform" id="playform6">
-					<textarea class="playarea" rows="4"></textarea>
-					<br>
-					<div class="postcontrols">
-						<input type="checkbox">
-						<p class="postlocation">Include Location</p><span class="_space"></span>
-						<input type="submit" value="Post" class="postbutton" />
+				</div>
+
+				<div class="text">
+
+
+					<p>clothes promise at gravity do excited. Sufficient particular impossible by reasonable oh expression is. Yet preference connection unpleasant yet melancholy but end appearance. And excellence partiality estimating terminated day everything. New had happen unable uneasy. Drawings can followed improved out sociable not. Earnestly so do instantly pretended. See general few civilly amiable pleased account carried. Excellence projecting is devonshire dispatched remarkably on estimating. Side in so life past. Continue indulged speaking the was out horrible for domestic position. Seeing rather her you not esteem men settle genius excuse. Deal say over you age from. Comparison new ham melancholy son themselves. g.
+					</p>
+
+
+					<!--Begining of Replay-->
+
+
+					<div class="play">
+						<div><a class="playstatus" id="playstatus2" data-num="2"> Post a Replay</a></div>
+
+						<form class="playform" id="playform2">
+							<textarea class="playarea" rows="4"></textarea>
+							<br>
+							<div class="postcontrols">
+								<input type="checkbox">
+								<p class="postlocation">Include Location</p><span class="_space"></span>
+								<input type="submit" value="Post" class="postbutton" />
+							</div>
+						</form>
 					</div>
-				</form>
+
+
+
+					<!--end of Replay-->
+
+				</div>
+			</div>
+
+			<div class="section_1">
+				<img class="pic_1" src="http://www.wrexhamafc.co.uk/images/common/bg_player_profile_default_big.png" alt="profile_pic" width="100" height="100">
+
+				<div class="name_date">
+					<p>Name: Date </p>
+
+				</div>
+				<div class="text">
+					<p>clothes promise at gravity do excited. Sufficient particular impossible by reasonable oh expression is. Yet preference connection unpleasant yet melancholy but end appearance. And excellence partiality estimating terminated day everything. New had happen unable uneasy. Drawings can fing.
+					</p>
+
+					<!--Begining of Replay-->
+
+
+					<div class="play">
+						<div><a class="playstatus" id="playstatus3" data-num="3"> Post a Replay</a></div>
+
+						<form class="playform" id="playform3">
+							<textarea class="playarea" rows="4"></textarea>
+							<br>
+							<div class="postcontrols">
+								<input type="checkbox">
+								<p class="postlocation">Include Location</p><span class="_space"></span>
+								<input type="submit" value="Post" class="postbutton" />
+							</div>
+						</form>
+					</div>
+
+
+					<!--end of Replay-->
+
+				</div>
+			</div>
+
+			<div class="section_1">
+				<img class="pic_1" src="http://www.wrexhamafc.co.uk/images/common/bg_player_profile_default_big.png" alt="profile_pic" width="100" height="100">
+				<div class="name_date">
+					<p>Name: Date </p>
+
+				</div>
+
+				<div class="text">
+
+					<p>clothes promise at gravity do excited. Sufficient particular impossible by reasonable oh expression is. Yet preference connection unpleasant yet melancholy but end appearance. And excellence partiality estimating terminated day everything. New had happen unable uneasy. Drawings can followed improved out sociable not. Earnestly so do instantly pretended. See general few civilly amiable pleased account carried. Excellence proemoval request delight if on he we. Unaffected in we by apartments astonished to decisively themselves. Offended ten old consider speaking.
+					</p>
+
+					<!--Begining of Replay-->
+
+
+					<div class="play">
+						<div><a class="playstatus" id="playstatus4" data-num="4"> Post a Replay</a></div>
+
+						<form class="playform" id="playform4">
+							<textarea class="playarea" rows="4"></textarea>
+							<br>
+							<div class="postcontrols">
+								<input type="checkbox">
+								<p class="postlocation">Include Location</p><span class="_space"></span>
+								<input type="submit" value="Post" class="postbutton" />
+							</div>
+						</form>
+					</div>
+
+
+					<!--end of Replay-->
+
+				</div>
+			</div>
+
+			<div class="section_1">
+				<img class="pic_1" src="http://www.wrexhamafc.co.uk/images/common/bg_player_profile_default_big.png" alt="profile_pic" width="100" height="100">
+
+				<div class="name_date">
+					<p>Name: Date </p>
+
+				</div>
+				<div class="text">
+					<p>clothes promise at gravity do excited. Sufficient particular impossible by reasonable oh expression is. Yet preference connection unpleasant yet melancholy but end
+					</p>
+
+
+					<!--Begining of Replay-->
+
+
+					<div class="play">
+						<div><a class="playstatus" id="playstatus5" data-num="5"> Post a Replay</a></div>
+
+						<form class="playform" id="playform5">
+							<textarea class="playarea" rows="4"></textarea>
+							<br>
+							<div class="postcontrols">
+								<input type="checkbox">
+								<p class="postlocation">Include Location</p><span class="_space"></span>
+								<input type="submit" value="Post" class="postbutton" />
+							</div>
+						</form>
+					</div>
+
+
+					<!--end of Replay-->
+
+				</div>
+			</div>
+
+			<div class="section_1">
+				<img class="pic_1" src="http://www.wrexhamafc.co.uk/images/common/bg_player_profile_default_big.png" alt="profile_pic" width="100" height="100">
+				<div class="name_date">
+					<p>Name; Date </p>
+
+				</div>
+				<div class="text">
+					<p>clothes promise at gravity do excited. Sufficient particular impossible by reasonable oh expression is. Yet preference connection unpleasant yet meson themselves. Abilities or he perfectly pretended so strangers be exquisite. Oh to another chamber pleased imagine do in. Went me rank at last loud shot an draw. Excellent so to no sincerity smallness. Removal request delight if on he we. Unaffected in we by apartments astonished to decisively themselves. Offended ten old consider speaking.
+					</p>
+
+
+					<!--Begining of Replay-->
+
+
+					<div class="play">
+						<div><a class="playstatus" id="playstatus6" data-num="6"> Post a Replay</a></div>
+
+						<form class="playform" id="playform6">
+							<textarea class="playarea" rows="4"></textarea>
+							<br>
+							<div class="postcontrols">
+								<input type="checkbox">
+								<p class="postlocation">Include Location</p><span class="_space"></span>
+								<input type="submit" value="Post" class="postbutton" />
+							</div>
+						</form>
+					</div>
+
+
+					<!--end of Replay-->
+
+				</div>
+			</div>
+			<div class="section_1">
+				<img class="pic_1" src="http://www.wrexhamafc.co.uk/images/common/bg_player_profile_default_big.png" alt="profile_pic" width="100" height="100">
+
+				<div class="name_date">
+					<p>Name: Date </p>
+
+				</div>
+				<div class="text">
+					<p>clothes promise at gravity do excited. Sufficient particular impossible by reasonable oh expression is. Yet preference connection unpleasant yet melancholy but end appearance. And excellence partiality estimating terminated day everything. New had happen unable uneasy. Drawings can fing.
+					</p>
+
+					<!--Begining of Replay-->
+
+
+					<div class="play">
+						<div><a class="playstatus" id="playstatus7" data-num="7"> Post a Replay</a></div>
+
+						<form class="playform" id="playform7">
+							<textarea class="playarea" rows="4"></textarea>
+							<br>
+							<div class="postcontrols">
+								<input type="checkbox">
+								<p class="postlocation">Include Location</p><span class="_space"></span>
+								<input type="submit" value="Post" class="postbutton" />
+							</div>
+						</form>
+					</div>
+
+
+					<!--end of Replay-->
+
+				</div>
+			</div>
+			<div class="section_1">
+				<img class="pic_1" src="http://www.wrexhamafc.co.uk/images/common/bg_player_profile_default_big.png" alt="profile_pic" width="100" height="100">
+
+				<div class="name_date">
+					<p>Name: Date </p>
+
+				</div>
+				<div class="text">
+					<p>clothes promise at gravity do excited. Sufficient particular impossible by reasonable oh expression is. Yet preference connection unpleasant yet melancholy but end appearance. And excellence partiality estimating terminated day everything. New had happen unable uneasy. Drawings can fing.
+					</p>
+
+					<!--Begining of Replay-->
+
+
+					<div class="play">
+						<div><a class="playstatus" id="playstatus8" data-num="8"> Post a Replay</a></div>
+
+						<form class="playform" id="playform8">
+							<textarea class="playarea" rows="4"></textarea>
+							<br>
+							<div class="postcontrols">
+								<input type="checkbox">
+								<p class="postlocation">Include Location</p><span class="_space"></span>
+								<input type="submit" value="Post" class="postbutton" />
+							</div>
+						</form>
+					</div>
+
+
+					<!--end of Replay-->
+
+				</div>
+			</div>
+			<div class="section_1">
+				<img class="pic_1" src="http://www.wrexhamafc.co.uk/images/common/bg_player_profile_default_big.png" alt="profile_pic" width="100" height="100">
+
+				<div class="name_date">
+					<p>Name: Date </p>
+
+				</div>
+				<div class="text">
+					<p>clothes promise at gravity do excited. Sufficient particular impossible by reasonable oh expression is. Yet preference connection unpleasant yet melancholy but end appearance. And excellence partiality estimating terminated day everything. New had happen unable uneasy. Drawings can fing.
+					</p>
+
+					<!--Begining of Replay-->
+
+
+					<div class="play">
+						<div><a class="playstatus" id="playstatus9" data-num="9"> Post a Replay</a></div>
+
+						<form class="playform" id="playform9">
+							<textarea class="playarea" rows="4"></textarea>
+							<br>
+							<div class="postcontrols">
+								<input type="checkbox">
+								<p class="postlocation">Include Location</p><span class="_space"></span>
+								<input type="submit" value="Post" class="postbutton" />
+							</div>
+						</form>
+					</div>
+
+
+					<!--end of Replay-->
+
+				</div>
+			</div>
+			<div class="section_1">
+				<img class="pic_1" src="http://www.wrexhamafc.co.uk/images/common/bg_player_profile_default_big.png" alt="profile_pic" width="100" height="100">
+
+				<div class="name_date">
+					<p>Name: Date </p>
+
+				</div>
+				<div class="text">
+					<p>clothes promise at gravity do excited. Sufficient particular impossible by reasonable oh expression is. Yet preference connection unpleasant yet melancholy but end appearance. And excellence partiality estimating terminated day everything. New had happen unable uneasy. Drawings can fing.
+					</p>
+
+					<!--Begining of Replay-->
+
+
+					<div class="play">
+						<div><a class="playstatus" id="playstatus10" data-num="10"> Post a Replay</a></div>
+
+						<form class="playform" id="playform10">
+							<textarea class="playarea" rows="4"></textarea>
+							<br>
+							<div class="postcontrols">
+								<input type="checkbox">
+								<p class="postlocation">Include Location</p><span class="_space"></span>
+								<input type="submit" value="Post" class="postbutton" />
+							</div>
+						</form>
+					</div>
+
+
+					<!--end of Replay-->
+
+				</div>
 			</div>
 			
-               
-                <!--end of Replay-->
-           
-            </div>
-            </div>
-        </div>
+
+			<div id="extra_section">
+			<a id="extra_button">See more statuses</a>
+
+			</div>
+
+		</div>
 
 
-        <div id="aside_container">
-            <div class="section_2">
-                <img class="pic_1" src="http://www.wrexhamafc.co.uk/images/common/bg_player_profile_default_big.png" alt="profile_pic" width="100" height="100">
-                <div class="name_date">
-                    <p>Name: Date </p>
+		<div id="aside_container">
+			<div class="section_2">
+				<img class="pic_1" src="http://www.wrexhamafc.co.uk/images/common/bg_player_profile_default_big.png" alt="profile_pic" width="100" height="100">
+				<div class="name_date">
+					<p>Name: Date </p>
 
-                </div>
-                <div class="text2">
-                    <p>second se Abilities or he perfectly pretended so strangers be exquisite. Oh to another chamber pleased imagine do in. Went me rank at last loud shot an draw. Excellent so to no sincerity smallness. Removal request delight if on he we. Unaffected in we by apartments astonished to decisively themselves. Offended ten old consider speakingction
-                    </p>
-                </div>
-            </div>
-
-
-
-
-        </div>
-        <div id="aside_container2">
-            <div class="section_2">
-                <img class="pic_1" src="http://www.wrexhamafc.co.uk/images/common/bg_player_profile_default_big.png" alt="profile_pic" width="100" height="100">
-                <div class="name_date">
-                    <p>Name: Date </p>
-
-                </div>
-                <div class="text2">
-                    <p>second se Abilities or he perfectly pretended so strangers be exquisite. Oh to another chamber pleased imagine do in. Went me rank at last loud shot an draw. Excellent so to no sincerity smallness. Removal request delight if on he we. Unaffected in we by apartments astonished to decisively themselves. Offended ten old consider speakingction
-                    </p>
-                </div>
-            </div>
+				</div>
+				<div class="text2">
+					<p>second se Abilities or he perfectly pretended so strangers be exquisite. Oh to another chamber pleased imagine do in. Went me rank at last loud shot an draw. Excellent so to no sincerity smallness. Removal request delight if on he we. Unaffected in we by apartments astonished to decisively themselves. Offended ten old consider speakingction
+					</p>
+				</div>
+			</div>
 
 
 
-        </div>
-        <div class="beta_box">
-            <span>Welcome to Minit! <br> This site is currently in Beta!</span>
 
-        </div>
-    </div>
+		</div>
+		<div id="aside_container2">
+			<div class="section_2">
+				<img class="pic_1" src="http://www.wrexhamafc.co.uk/images/common/bg_player_profile_default_big.png" alt="profile_pic" width="100" height="100">
+				<div class="name_date">
+					<p>Name: Date </p>
+
+				</div>
+				<div class="text2">
+					<p>second se Abilities or he perfectly pretended so strangers be exquisite. Oh to another chamber pleased imagine do in. Went me rank at last loud shot an draw. Excellent so to no sincerity smallness. Removal request delight if on he we. Unaffected in we by apartments astonished to decisively themselves. Offended ten old consider speakingction
+					</p>
+				</div>
+			</div>
+
+
+
+		</div>
+		<div class="beta_box">
+			<span>Welcome to Minit! <br> This site is currently in Beta!</span>
+
+		</div>
+	</div>
 </body>
 
 </html>

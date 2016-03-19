@@ -1,4 +1,4 @@
-window.addEventListener("load", function () {
+document.addEventListener("DOMContentLoaded", function () {
 	var e = document.querySelectorAll('.playstatus');
 	var item_num = 0;
 	for (var a = 0; a < e.length; a++) {
@@ -12,4 +12,4 @@ window.addEventListener("load", function () {
 		});
 	}
 
-});
+},false);
