@@ -9,7 +9,7 @@ elemn.onclick =function() {
       document.getElementById("extra_section").innerHTML = xhttp.response;
     }
   };
-
+document.getElementById("extra_section").style.background="white"; 
   xhttp.open("GET", "statuses-1.html", true);
   xhttp.send();
 }
