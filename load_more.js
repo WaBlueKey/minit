@@ -8,14 +8,13 @@ function load_more() {
 		document.getElementById("extra_button").innerHTML = "LOADING ...";
 		/*disabling the link so that users dont keep clicking on it*/
 		document.getElementById("extra_button").disable = true;
+		document.getElementById("extra_button").style.cursor = "not-allowed";
 
 		setTimeout(function () {
 			ajaxGet("statuses-1.html", function (response) {
 				document.getElementById("extra_section").innerHTML = response;
 			});
 		}, 2000);
-
-
 	}
 }
 
