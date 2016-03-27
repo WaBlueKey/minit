@@ -1,7 +1,7 @@
 HTMLElement.prototype.toggle = function () {
-	if (this.style.display == '') {
+	if (this.style.display == 'none') {
 		this.style.display = 'block';
 	} else {
-		this.style.display = '';
+		this.style.display = 'none';
 	}
 }
